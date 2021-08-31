@@ -13,5 +13,5 @@ Este é um projeto que desenvolvi de maneira independente para praticar CSS e Ja
 
 * Faça o clone do repositório
 * Instale a extensão do VS Code [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-* Utilize o atalgo `Ctrl + Shift + P` no VS Code
+* Utilize o atalho `Ctrl + Shift + P` no VS Code
 * Procure por **Live Server: Open with Live Server**
