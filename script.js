@@ -47,7 +47,6 @@ const getNumbers = (evt) => {
   countUpdate += number;
   currCount.innerHTML += number;
   numbersArray.push(number)
-  // console.log(numbersArray);
 };
 
 numberKeys.forEach((number) => number.addEventListener('click', getNumbers));
@@ -66,6 +65,13 @@ const equalsBtn = document.querySelector('.equal');
 
 equalsBtn.addEventListener('click', () => {
   const total = eval(currCount.innerHTML);
+  console.log(total.toString().length);
+  if (total.toString().length > 14) {
+    resultContainer.style.fontSize = '23px';
+  }
+  if (total.toString().length > 19) {
+    resultContainer.style.fontSize = '18px';
+  }
   resultContainer.innerHTML = total;
 })
 
@@ -73,7 +79,7 @@ equalsBtn.addEventListener('click', () => {
 
 const sumBtn = document.querySelector('.plus');
 
-const sum = (number) => {
+const sum = () => {
   currCount.innerHTML += ' + ';
 };
 
@@ -83,7 +89,7 @@ sumBtn.addEventListener('click', sum);
 
 const minusBtn = document.querySelector('.minus');
 
-const sub = (number) => {
+const sub = () => {
   currCount.innerHTML += ' - ';
 };
 
@@ -93,7 +99,7 @@ minusBtn.addEventListener('click', sub);
 
 const timesBtn = document.querySelector('.times');
 
-const mult = (number) => {
+const mult = () => {
   currCount.innerHTML += ' * ';
 };
 
@@ -103,7 +109,7 @@ timesBtn.addEventListener('click', mult);
 
 const divBtn = document.querySelector('.div');
 
-const div = (number) => {
+const div = () => {
   currCount.innerHTML += ' / ';
 };
 
